@@ -1,0 +1,22 @@
+
+  const formService = {
+    saveForm: () => {
+    const fName = document.getElementById('name');
+    const fEmail = document.getElementById('E-mail');
+    const fPhone = document.getElementById('Phone');
+    const fDate = document.getElementById('Day/Time');
+    const fComments = document.getElementById('Comments');
+
+        const formData = {
+            Name: fName,
+            Email: fEmail,
+            Phone: fPhone,
+            Date: fDate,
+            Comments: fComments
+        };
+    
+    array.push(formData);
+    }
+};
+
+module.exports = formService;

@@ -1,0 +1,29 @@
+const data1 = require('../instruments.json');
+const data2 = require('../instructors.json');
+
+const lessonFaceService = {
+    //returns instruments
+    getInstruments: () => {
+        return data1;
+    },
+    //returns instructors by instrument param
+    getInstructorByInstrument: (something) => {
+        const goodInstructors = data2.filter((instructors) => {
+            for(let i = 0; i < instructors.instruments.length; ++i) {
+                if(instructors.instruments.at(i).code == something) {
+                    return true;
+                }
+            }
+        });
+        return goodInstructors;
+    },
+    //returns an instructor by id param
+    getInstructorById: (something) => {
+        const insMatch = data2.filter((instructors) => {
+            return (instructors.id == something);
+        });
+        return insMatch.at(0);
+    },
+};
+
+module.exports = lessonFaceService;

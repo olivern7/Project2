@@ -1,3 +1,4 @@
-# Skeleton App
-
-This is a very basic skeleton express app you can use to build from on labs and projects.
+Oliver Norris 
+Project 2 
+COP3813
+3/6/2022
