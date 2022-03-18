@@ -1,0 +1,14 @@
+<h1>Lesson Face Login</h1>
+{{#if error}}
+  <p>{{error}}</p>
+{{/if}}
+
+<form action="/login" method="POST">
+  <hr>
+  <label for="username">Enter Username</label>
+  <input type="text" id="username" name="username">
+  <label for="password">Enter Password</label>
+  <input type="password" id="password" name="password">
+  <hr>
+  <input type="submit" value="Log in">
+</form>

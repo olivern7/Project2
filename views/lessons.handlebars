@@ -1,0 +1,18 @@
+<h1>{{user}}, you chose {{instrument}}.</h1>
+<h2>Here's a list of our available instructors that teach {{instrument}}:</h2>
+<ul>
+    {{#each instructors}}
+    <li>
+        Name: {{name}}
+        <br>
+        Price: ${{rate.amount}} Per {{rate.minutes}} Minutes
+        <br>
+        Bio: {{bio}}
+        <br>
+        <img src={{image}} alt="Photo">
+        <br>
+        <a href='/lessons/schedule/{{id}}'>Book a Lesson</a>
+        <br> 
+    </li>
+    {{/each}}
+</ul>
